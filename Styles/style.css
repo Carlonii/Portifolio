@@ -20,7 +20,14 @@ body {
     box-sizing: border-box;
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 
+}
+
+.main{
+    flex: 1;
 }
 
 .cabecalho{
@@ -40,7 +47,11 @@ body {
     text-decoration: none;
 }
 
-
+.cabecalho__menu__link:hover{
+    color: var(--cor-hover);
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
+}
 
 .titulo-destaque {
     color: var(--cor-terciaria) ;
@@ -108,15 +119,17 @@ body {
     font-size: 1.5rem;
     padding: 21.5px 0;
     text-decoration: none;
-    color: var(--cor-hover);
+    color:var(--cor-primaria);
     font-family: var(--fonte-secundaria);
     border: 4px solid var(--cor-terciaria);
     background-color: var(--cor-secundaria);
 
 }
 
-.apresentacao__links__link:hover {
+.apresentacao__links__navegacao:hover {
     background-color: var(--cor-hover);
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
 
 }
 
@@ -131,7 +144,7 @@ body {
 
 .sobre__mim__containter{
     background-color: var(--cor-container);
-    height: 50vw;
+    height: 50%;
     width: 50vw;
 }
 
@@ -177,6 +190,9 @@ body {
     padding-left: 40px;
     padding-right: 20px;
     padding-bottom: 50px;
+    font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 100;
 }
 
 .skills__container{
@@ -276,24 +292,15 @@ body {
     z-index: 2;
 }
 
-.rodape { 
-   color: var(--cor-primaria);
-   background-color: var(--cor-terciaria);
-   padding: 24px;
-   text-align: center;
-   font-family: var(--fonte-secundaria);
-   font-size: 1.5rem;
 
-}
+ 
 
 .projetos{
-    display: flex;
-    flex-direction: column;
+    padding: 5% 0%;
 }
 
 .projetos__tittle{
     text-align: center;
-    padding-top: 100px;
     text-decoration: solid;
     font-weight: solid;
     font-size: 2rem;
@@ -315,6 +322,18 @@ body {
     gap: 50px;
 }
 
+.projetos__content__text1{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.text__info__text{
+    font-size: 1.3rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 200;
+}
+
 .content__text__tittle{
     text-align: end;
     font-weight: solid;
@@ -332,7 +351,24 @@ body {
 }
 
 .content__text__buttons{
-    text-align: end;
+    display: flex;
+    align-self: flex-end;
+    gap: 50px;
+    
+}
+
+.text__buttons__links{
+    text-decoration: none;
+    color: var(--cor-terciaria);
+    font-weight: 400;
+    font-size: 1.5rem;
+    
+}
+
+.text__buttons__links:hover{
+    color: var(--cor-hover);
+    transform: scale(1.1); 
+    transition: transform 0.3s ease; 
 }
 
 .content__text__tittlel{
@@ -351,17 +387,38 @@ body {
 }
 
 .content__text__buttonsl{
-    text-align: start;
+    display: flex;
+    align-self: flex-start;
+    gap: 50px;
 }
 
 .projetos_mais{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .projetos__mais__veja{
-    text-decoration: solid;
-    color:var(--cor-secundaria);
-    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 25%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor-primaria);
+    font-family: var(--fonte-secundaria);
+    border: 4px solid var(--cor-terciaria);
+    background-color: var(--cor-secundaria);
+
+}
+
+.projetos__mais__veja:hover {
+    background-color: var(--cor-hover);
+    transform: scale(1.1); /* Aumenta o tamanho em 10% */
+    transition: transform 0.3s ease; /* Adiciona uma transição suave */
 }
 
 .contatos{
@@ -391,12 +448,29 @@ body {
 
 .contatos__container__text{
     text-decoration: none;
-    font-weight: normal;
     font-size: 1.5rem;
+    font-family: var(--fonte-secundaria);
+    font-weight: 200;
 }
 
+.rodape { 
+    color: var(--cor-primaria);
+    background-color: var(--cor-terciaria);
+    padding: 24px;
+    text-align: center;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.5rem;
+ }
 
 @media (max-width: 1200px){
+
+    body {
+        margin-top: 0;
+    }
+
+    .main{
+        margin-top: -24px;
+    }
 
     .cabecalho{
         padding: 10%;
@@ -413,6 +487,73 @@ body {
 
     .apresentacao__conteudo{
         width: auto;
+    }
+
+    .sobre__mim{
+        padding-top: 20px;
+        padding-left: 0;
+    }
+
+    .sobre__mim__containter{
+        height: 100%;
+        width: 100vw;
+        padding-left: 0;
+    }
+
+    .projetos__content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        align-self: center;
+        text-align: center;
+        padding: 5rem 50px;
+        gap: 50px;
+        
+    }
+
+    .projetos__content__text1{
+        flex-direction: column;
+    }
+
+    .content__text__tittle{
+        text-align: center;
+    }
+
+    .content__text__info{
+        text-align: center;
+        padding-left: 0px;
+    }
+
+    .content__text__languages{
+        text-align: center;
+    }
+
+    .content__text__buttons{
+        align-self: center;  
+    }
+
+    .content__text__tittlel{
+        text-align: center;
+    }
+
+    .content__text__infol{
+        text-align: center;
+        padding-right: 0px;
+    }
+
+    .content__text__languagesl{
+        text-align: center;
+    }
+    
+    .content__text__buttonsl{
+        align-self: center;
+    }
+
+    .projetos__mais__veja{
+        width: 35%;
+    }
+    .rodape{
+        margin-top: auto;
     }
 
 }
