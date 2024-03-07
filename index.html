@@ -10,24 +10,28 @@
     <header class="cabecalho">
         <nav class="cabecalho__menu">
             <a class="cabecalho__menu__link" href="index.html">Home</a>
-            <a class="cabecalho__menu__link" href="about.html">Sobre mim</a>
-            <a class="cabecalho__menu__link" href="contato.html">Contato</a>
-            <a class="cabecalho__menu__link" href="curriculo.html">Curriculo</a>
+            <a class="cabecalho__menu__link" href="#s1">Sobre mim</a>
+            <a class="cabecalho__menu__link" href="#s2">Projetos</a>
+            <a class="cabecalho__menu__link" href="#s3">Contato</a>
+            <a class="cabecalho__menu__link" href="Assets/Filipe Carloni Resumo.pdf" target="_blank">Curriculo</a>
+            <button class="cabecalho__menu__button" id="toggle" >Light</button>
+            
         </nav>
     </header>
     <main class="main">
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
         <!-- Inicio Home -->
         <section class="apresentacao">
           <section class="apresentacao__conteudo"> 
-            <h1 class="apresentacao__conteudo__titulo">Um breve <strong class="titulo-destaque"> resumo</strong> sobre mim</h1>
-            <p class="apresentacao__conteudo__texto">Olá! Sou Filipe Carloni, desenvolvedor Front-end com conhecimento em JavaScript, HTML e CSS. Estudante de Análise e Desenvolvimento de Sistemas fluente em Inglês com sólidos conhecimentos em programação e resolução de problemas. Habilidades em desenvolvimento de software, análise de requisitos e trabalho em equipe. Buscando oportunidades para aplicar e aprimorar minhas competências na área de tecnologia.  </p>
+            <h1 class="apresentacao__conteudo__titulo">Meu nome é Filipe Carloni </h1>
+            <p class="apresentacao__conteudo__texto">Desenvolvedor Front-end com conhecimento em JavaScript, HTML e CSS. Estudante de Análise e Desenvolvimento de Sistemas fluente em Inglês com sólidos conhecimentos em programação e resolução de problemas. Habilidades em desenvolvimento de software, análise de requisitos e trabalho em equipe. Buscando oportunidades para aplicar e aprimorar minhas competências na área de tecnologia.  </p>
             <div class="apresentacao__links">
                 <h2 class="apresentacao___links___subtitulo"> Acesse minhas redes :</h2>
-                <a class="apresentacao__links__navegacao" href="https://linkedin.com/in/filipe-carloni-dev">
+                <a class="apresentacao__links__navegacao" href="https://linkedin.com/in/filipe-carloni-dev" target="_blank">
                 <img src="Assets/linkedin.png"> 
                 Linkedin
                 </a>
-                <a class="apresentacao__links__navegacao" href="https://github.com/Carlonii">
+                <a class="apresentacao__links__navegacao" href="https://github.com/Carlonii" target="_blank">
                 <img src="Assets/github-logo.png">    
                 GitHub</a>    
             </div>
@@ -38,7 +42,7 @@
         <!-- Fim Home -->
 
         <!-- Inicio Section Sobre mim -->
-        <section class="sobre__mim">
+        <section class="sobre__mim" id="s1">
             <div class="sobre__mim__containter">
               <h1 class="container__tittle">Sobre mim</h1>
               <h2 class="container__text">Estudante de Análise e Desenvolvimento de Sistemas fluente em Inglês com sólidos conhecimentos emprogramação e resolução de problemas. Habilidades em desenvolvimento de software, análise de requisitos etrabalho em equipe. Buscando oportunidades para aplicar e aprimorar minhas competências na área de tecnologia.Estudante de Análise e Desenvolvimento de Sistemas fluente em Inglês com sólidos conhecimentos emprogramação e resolução de problemas. Habilidades em desenvolvimento de software, análise de requisitos etrabalho em equipe. Buscando oportunidades para aplicar e aprimorar minhas competências na área de tecnologia.</h2>
@@ -138,7 +142,7 @@
           
           <!-- Inicio Section Projetos -->
 
-          <section class="projetos">
+          <section class="projetos" id="s2">
 
             <div class="projetos__tittle">
               <h1>Projetos</h1>
@@ -163,11 +167,11 @@
               </div>
         
               <div class="projetos__content__img">
-                <img src="Assets/RockPaperSciossor print.png" alt="">
+                <img src="Assets/RockPaperSciossor print.png" alt="" class="content__img__img">
               </div>
               
               <div class="projetos__content__img">
-                <img src="Assets/SketchPad.png" alt="">
+                <img src="Assets/SketchPad.png" alt="" class="content__img__img">
               </div>
         
               <div class="projetos__content__text1">
@@ -203,7 +207,7 @@
               </div>
         
               <div class="projetos__content__img">
-                <img src="Assets/AboutMePage.png" alt="">
+                <img src="Assets/AboutMePage.png" alt="" class="content__img__img">
               </div>
         
         
@@ -212,20 +216,20 @@
           </section>
         
           <div class="projetos_mais">
-            <a href="" class="projetos__mais__veja">Veja mais projetos</a>
+            <a href="projects.html" class="projetos__mais__veja">Veja mais projetos</a>
           </div>
 
           <!-- Fim Section Projetos -->
 
           <!-- Inicio Section Contato-->
 
-        <section class="contatos">
+        <section class="contatos" id="s3">
           <div class="contatos__container">
             <h1 class="contatos__container__tittle">Contato</h1>
             <h2 class="contatos__container__text">Email: dipradofilipe@gmail.com</h2>
-            <h2 class="contatos__container__text">Linkedin: https://www.linkedin.com/in/filipe-carloni-dev/ </h2>
-            <h2 class="contatos__container__text">GitHub: https://github.com/Carlonii </h2>
-            <h2 class="contatos__container__text">Telefone: +55(62)99991-2499 </h2>
+            <h2 class="contatos__container__text">Telefone: +55(62)99991-2499</h2>
+            <a href="https://linkedin.com/in/filipe-carloni-dev" target="_blank" class="contatos__links">Linkedin</a>
+            <a href="https://github.com/Carlonii" target="_blank" class="contatos__links">GitHub</a>
           </div>
 
         </section>
@@ -237,4 +241,5 @@
         <p>Desenvolvido por Filipe</p>
     </footer>    
 </body>
+<script src="index.js"></script>
 </html>

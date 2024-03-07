@@ -34,7 +34,7 @@ Esse projeto está sendo desenvolvido com as seguintes tecnologias:
 
 ##  Projeto
 
-Criei o projeto para ter uma vitrine para demonstrar meus conhecimentos e minha paixao por programacao, alem de ser uma forma mais facil de me conectar com outros programadores . Para ver o projeto <a href="https://carlonii.github.io/Portifolio/"> CLIQUE AQUI.</a>🚀
+Criei o projeto para ter uma vitrine para demonstrar meus conhecimentos e minha paixao por programacao, alem de ser uma forma mais facil de me conectar com outros programadores . Para ver o projeto <a href="https://carlonii.github.io/Portifolio/"> CLIQUE AQUI.</a>
 
 
 Feito ‍por Filipe Carloni : 
