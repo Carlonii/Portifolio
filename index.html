@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portifolio</title>
     <link rel="stylesheet" href="./Styles/style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
     <header class="cabecalho">
@@ -13,10 +14,12 @@
             <a class="cabecalho__menu__link" href="#s1">Sobre mim</a>
             <a class="cabecalho__menu__link" href="#s2">Projetos</a>
             <a class="cabecalho__menu__link" href="#s3">Contato</a>
-            <a class="cabecalho__menu__link" href="Assets/Filipe Carloni Resumo.pdf" target="_blank">Curriculo</a>
-            <button class="cabecalho__menu__button" id="toggle" >Light</button>
-            
+            <a class="cabecalho__menu__link" href="Assets/Filipe Carloni Resumo.pdf" target="_blank">Curriculo</a> 
         </nav>
+
+        <div class="cabecalho__menu__toggle" id="toggle">
+          <svg class="menu__toggle__img" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="m12 22c5.5228475 0 10-4.4771525 10-10s-4.4771525-10-10-10-10 4.4771525-10 10 4.4771525 10 10 10zm0-1.5v-17c4.6944204 0 8.5 3.80557963 8.5 8.5 0 4.6944204-3.8055796 8.5-8.5 8.5z" fill="#212121"/></svg>
+        </div>
     </header>
     <main class="main">
         <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
@@ -60,7 +63,7 @@
                     </div>
                     <h3>Html</h3>
                   </div>
-                  <p>Possuo conhecimento em HTML</p>
+                  <p class="container__box__text">Possuo conhecimento em HTML</p>
                 </div>
         
                 <div class="skills__container__box">
@@ -70,7 +73,7 @@
                     </div>
                     <h3>Css</h3>
                   </div>
-                  <p>Possuo conhecimento em Css</p>
+                  <p class="container__box__text">Possuo conhecimento em Css</p>
                 </div>
         
                 <div class="skills__container__box">
@@ -80,7 +83,7 @@
                     </div>
                     <h3>Js</h3>
                   </div>
-                  <p>Possuo conhecimento em Js</p>
+                  <p class="container__box__text">Possuo conhecimento em Js</p>
                 </div>
         
                 <div class="skills__container__box">
@@ -90,7 +93,7 @@
                     </div>
                     <h3>Pthon</h3>
                   </div>
-                  <p>Possuo conhecimento em Python</p>
+                  <p class="container__box__text">Possuo conhecimento em Python</p>
                 </div>
         
                 <div class="skills__container__box">
@@ -100,7 +103,7 @@
                     </div>
                     <h3>C</h3>
                   </div>
-                  <p>Possuo conhecimento em C</p>
+                  <p class="container__box__text">Possuo conhecimento em C</p>
                 </div>
         
                 <div class="skills__container__box">
@@ -110,7 +113,7 @@
                     </div>
                     <h3>Node Js</h3>
                   </div>
-                  <p>Possuo conhecimento em Node Js</p>
+                  <p class="container__box__text">Possuo conhecimento em Node Js</p>
                 </div>
         
                 <div class="skills__container__box">
@@ -120,7 +123,7 @@
                     </div>
                     <h3>Git</h3>
                   </div>
-                  <p>Possuo conhecimento em Git</p>
+                  <p class="container__box__text">Possuo conhecimento em Git</p>
                 </div>
         
                 <div class="skills__container__box">
@@ -130,7 +133,7 @@
                     </div>
                     <h3>Sql</h3>
                   </div>
-                  <p>Possuo conhecimento em Sql</p>
+                  <p class="container__box__text">Possuo conhecimento em Sql</p>
                 </div>
         
               </div>
@@ -152,22 +155,22 @@
               
               <div class="projetos__content__text">
                 <div class="content__text__tittle">
-                  <h1>Rock Paper Scissor</h1>
+                  <h1>Controle de Estoque</h1>
                 </div>
                 <div class="content__text__info"> 
-                  <h3 class="text__info__text">Uma página produzida no curso de Js da Odin Academy . Nele pude fixar meus conhecimentos de JavaScript e de como utilizar events </h3>
+                  <h3 class="text__info__text">Um programa escrito utilizando python para simular o controle de estoque de uma loja </h3>
                 </div>
                 <div class="content__text__languages">
-                  <h2>JavaScript Html Css</h2>
+                  <h2>Python Sql</h2>
                 </div>
                 <div class="content__text__buttons">
                   <a href="" class="text__buttons__links">LiveVersion</a>
-                  <a href="" class="text__buttons__links">GitHub</a>
+                  <a href="https://github.com/Carlonii/Controle-de-estoque" class="text__buttons__links" target="_blank">GitHub</a>
                 </div>
               </div>
         
               <div class="projetos__content__img">
-                <img src="Assets/RockPaperSciossor print.png" alt="" class="content__img__img">
+                <img src="Assets/estoque.jpeg" alt="" class="content__img__estoque">
               </div>
               
               <div class="projetos__content__img">
@@ -185,29 +188,29 @@
                   <h2>JavaScript Html Css</h2>
                 </div>
                 <div class="content__text__buttonsl">
-                  <a href="" class="text__buttons__links">LiveVersion</a>
-                  <a href="" class="text__buttons__links">GitHub</a>
+                  <a href="https://carlonii.github.io/Etch-a-Sketch/" class="text__buttons__links" target="_blank">LiveVersion</a>
+                  <a href="https://github.com/Carlonii/Etch-a-Sketch" class="text__buttons__links" target="_blank">GitHub</a>
                 </div>
               </div>
             
               <div class="projetos__content__text">
                 <div class="content__text__tittle">
-                  <h1>About Me Page</h1>
+                  <h1>Portifolio</h1>
                 </div>
                 <div class="content__text__info"> 
-                  <h3 class="text__info__text">Uma página produzida no curso de Js da Alura . Nele pude fixar meus conhecimentos de JavaScript  </h3>
+                  <h3 class="text__info__text">Meu portifolio criado para demonstrar meus conhecimentos em programacao </h3>
                 </div>
                 <div class="content__text__languages">
                   <h2>JavaScript Html Css</h2>
                 </div>
                 <div class="content__text__buttons">
-                  <a href="" class="text__buttons__links">LiveVersion</a>
-                  <a href="" class="text__buttons__links">GitHub</a>
+                  <a href="https://carlonii.github.io/Portifolio/" class="text__buttons__links" target="_blank">LiveVersion</a>
+                  <a href="https://github.com/Carlonii/Portifolio" class="text__buttons__links" target="_blank">GitHub</a>
                 </div>
               </div>
         
               <div class="projetos__content__img">
-                <img src="Assets/AboutMePage.png" alt="" class="content__img__img">
+                <img src="Assets/meuportifolio.jpeg" alt="" class="content__img__portifolio">
               </div>
         
         
@@ -216,7 +219,7 @@
           </section>
         
           <div class="projetos_mais">
-            <a href="projects.html" class="projetos__mais__veja">Veja mais projetos</a>
+            <a href="https://github.com/Carlonii" class="projetos__mais__veja" target="_blank">Veja mais projetos</a>
           </div>
 
           <!-- Fim Section Projetos -->
